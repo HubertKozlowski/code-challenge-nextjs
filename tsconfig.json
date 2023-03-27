@@ -19,6 +19,7 @@
       "@/styled/*": ["src/styles/*"],
       "@/atoms/*": ["src/components/atoms/*"],
       "@/molecules/*": ["src/components/molecules/*"],
+      "@/basics/*": ["src/basics/*"],
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

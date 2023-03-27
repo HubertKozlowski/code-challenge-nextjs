@@ -1,4 +1,4 @@
-import { logos } from '../../../public/assets/logos'
+import { logos } from '../../../../public/assets/logos'
 import styles from'./Logo.module.sass'
 
 export type IconType = 'gicon' | 'core' | 'strapline' 
