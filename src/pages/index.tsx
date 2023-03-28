@@ -1,5 +1,5 @@
-import { PageHeader } from "@/atoms/PageHeader";
-import Head from "next/head";
+import { PageHeader } from "@/atoms/PageHeader"
+import Head from "next/head"
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <PageHeader text='Welcome' />
+      <PageHeader text="Welcome" />
     </>
   )
 }

@@ -1,12 +1,9 @@
-import styles from './PageHeader.module.sass'
-
+import styles from "./PageHeader.module.sass"
 
 interface PageHeaderProps {
-  text: string;
+  text: string
 }
 
-export const PageHeader = ({text}: PageHeaderProps) => {
-  return (
-    <h2 className={styles.header}>{text}</h2>
-  )
+export function PageHeader({ text }: PageHeaderProps) {
+  return <h2 className={styles.header}>{text}</h2>
 }

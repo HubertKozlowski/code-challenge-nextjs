@@ -20,9 +20,9 @@
       "@/atoms/*": ["src/components/atoms/*"],
       "@/molecules/*": ["src/components/molecules/*"],
       "@/basics/*": ["src/basics/*"],
-      "@/services/*": ["src/services/*"],
-    },
+      "@/services/*": ["src/services/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".eslintrc.json"],
   "exclude": ["node_modules"]
 }

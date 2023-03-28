@@ -1,11 +1,9 @@
-import styles from './Chip.module.sass'
+import styles from "./Chip.module.sass"
 
 interface ChipProps {
-  text: string;
+  text: string
 }
 
-export const Chip = ({text}: ChipProps) => {
-  return (
-      <span className={styles.wrapper}>{text}</span>
-  )
+export function Chip({ text }: ChipProps) {
+  return <span className={styles.wrapper}>{text}</span>
 }

@@ -1,4 +1,4 @@
 export interface RoutingPath {
-  path: string,
+  path: string
   label: string
 }

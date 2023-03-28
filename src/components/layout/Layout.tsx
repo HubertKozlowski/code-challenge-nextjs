@@ -6,13 +6,11 @@ export interface LayoutProps {
   children: ReactNode
 }
 
-export const Layout: React.FC<LayoutProps> = ({ children }) => {
+export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Header/>
-      <Main>
-          {children}
-      </Main>
+      <Header />
+      <Main>{children}</Main>
     </>
   )
 }
