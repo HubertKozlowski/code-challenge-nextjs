@@ -8,6 +8,14 @@ interface Content {
   text: string
 }
 
+export interface EventData {
+  name: string
+  localization: string
+  charge?: string
+  date: Date
+  isSignUpEnable: boolean
+}
+
 export interface Article {
   id: string
   slug: string
@@ -17,4 +25,5 @@ export interface Article {
   content: Content // in Strapi this field would be a dynamic block
   cover: string // in Strapi this field would contain object with optimized data
   categories: Category[]
+  event: EventData
 }

@@ -23,7 +23,13 @@ const articleMockGenerator = (props?: Partial<Article>): Article => ({
   categories: props?.categories || [
     { name: "topic", slug: "topic" },
     { name: "user", slug: "user" }
-  ]
+  ],
+  event: props?.event || {
+    name: "Corn Exchange",
+    localization: "Witney, Oxforshire",
+    date: new Date(2021, 8, 16, 16, 0),
+    isSignUpEnable: true
+  }
 })
 
 export const ARTICLES_MOCK: Article[] = [
