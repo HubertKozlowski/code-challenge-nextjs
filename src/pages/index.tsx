@@ -1,7 +1,13 @@
-import { Layout } from "../components/layout";
+import { PageHeader } from "@/atoms/PageHeader";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <h2>      Welcome    </h2>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <PageHeader text='Welcome' />
+    </>
   )
 }

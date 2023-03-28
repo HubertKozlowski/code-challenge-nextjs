@@ -1,4 +1,4 @@
-import { RoutingPath } from "../types/routing";
+import { RoutingPath } from "../types/routing.types";
 
 type MainPages = 'home' | 'articles'
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from '@/atoms/Logo';
 import styles from './Header.module.sass'
 import Link from 'next/link';
-import { routes } from '@/basics/constants/routing';
+import { routes } from '@/basics/constants/routing.constants';
 
 export const Header: React.FC= () => {
   return (
