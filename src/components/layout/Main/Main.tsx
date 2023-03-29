@@ -6,5 +6,10 @@ export interface MainContentProps {
 }
 
 export function Main({ children }: MainContentProps) {
-  return <main className={styles.main}>{children}</main>
+  return (
+    <>
+      <main className={styles.main}>{children}</main>
+      <div className={styles.background} />
+    </>
+  )
 }
