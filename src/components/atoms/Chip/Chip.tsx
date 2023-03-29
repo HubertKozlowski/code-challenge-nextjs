@@ -1,6 +1,6 @@
 import styles from "./Chip.module.sass"
 
-interface ChipProps {
+export interface ChipProps {
   text: string
 }
 

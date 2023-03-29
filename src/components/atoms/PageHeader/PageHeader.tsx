@@ -1,6 +1,6 @@
 import styles from "./PageHeader.module.sass"
 
-interface PageHeaderProps {
+export interface PageHeaderProps {
   text: string
 }
 
