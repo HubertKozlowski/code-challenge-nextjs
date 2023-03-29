@@ -24,6 +24,10 @@
   margin-top: 30px
   display: flex
   justify-content: center
+
+.coverStyles
+  width: 1020px
+  height: 500px
    
 .article
   margin: auto
@@ -33,5 +37,20 @@
     color: $primary
     font-size: 28px
     margin: 70px 0 12px
-    font-weight: 600
- 
+    font-weight: 600  
+    
+@media screen and (max-width: $md)
+  .coverStyles
+    width: 600px
+    height: stretch
+
+@media screen and (max-width: $sm)
+  .title
+    font-size: 42px
+    
+  .coverStyles
+    width: 352px
+    height: stretch
+    
+  .article_title
+    margin-top: 36px

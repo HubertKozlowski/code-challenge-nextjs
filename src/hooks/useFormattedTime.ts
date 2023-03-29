@@ -6,4 +6,3 @@ export function useFormattedTime(date: Date) {
 
   return formattedTime
 }
-

@@ -14,4 +14,3 @@ and I love pancakes`
 export const BasicMarkdown = () => {
   return <Markdown>{markdown}</Markdown>
 }
-

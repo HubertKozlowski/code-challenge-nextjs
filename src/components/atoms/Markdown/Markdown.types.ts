@@ -5,4 +5,3 @@ type MarkdownToJsxProps = typeof MarkdownToJsx.defaultProps
 export type MarkdownProps = MarkdownToJsxProps & {
   children: string
 }
-

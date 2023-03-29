@@ -29,4 +29,3 @@ export function ArticlePreviewEvent({ name, localization, charge, date, isSignUp
     </div>
   )
 }
-

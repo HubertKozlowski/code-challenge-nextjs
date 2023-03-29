@@ -6,4 +6,3 @@ export function useFormattedDate(date: Date) {
 
   return formattedDate
 }
-

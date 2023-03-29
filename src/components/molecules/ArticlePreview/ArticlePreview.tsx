@@ -17,7 +17,7 @@ export function ArticlePreview({ createdAt, title, description, cover, content, 
       <div className={styles.createdAt}>{createdAtDate}</div>
       <div className={styles.coverWrapper}>
         <div>
-          <Image src={cover} alt="article cover" priority width={1020} height={500} />
+          <Image src={cover} alt="article cover" priority width={1020} height={500} className={styles.coverStyles} />
           <ArticlePreviewEvent {...event} />
         </div>
       </div>
@@ -28,4 +28,3 @@ export function ArticlePreview({ createdAt, title, description, cover, content, 
     </article>
   )
 }
-
