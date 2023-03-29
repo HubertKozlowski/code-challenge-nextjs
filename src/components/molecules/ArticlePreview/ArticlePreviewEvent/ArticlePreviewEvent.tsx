@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { EventData } from "@/basics/types/articles.types"
 import { useFormattedDate } from "@/hooks/useFormattedDate"
 import { useFormattedTime } from "@/hooks/useFormattedTime"
@@ -10,17 +11,22 @@ export function ArticlePreviewEvent({ name, localization, charge, date, isSignUp
   const createdAtTime = useFormattedTime(date)
 
   return (
-    <>
-      <p>
-        {name}, {localization}
-      </p>
-      <p>{charge ?? "Free"}</p>
-      <p>{createdAtTime}</p>
-      <p>{createdAtDate}</p>
-      <button type="button" disabled={!isSignUpEnable}>
+    <div className={styles.wrapper}>
+      <div>
+        <span>
+          {name}, {localization}
+        </span>
+        <div className={styles.event_details}>
+          <span>{charge ?? "Free"}</span>
+          <span>
+            {createdAtTime} | {createdAtDate}
+          </span>
+        </div>
+      </div>
+      <button onClick={() => console.log("clicked")} className={styles.event_button} type="button" disabled={!isSignUpEnable}>
         Sign up to this event
       </button>
-    </>
+    </div>
   )
 }
 
